@@ -1,3 +1,14 @@
+/*
+ *  Console.js
+ *
+ *  An interface to native console methods
+ *  Avoids issues when browser does not have native support for console
+ *
+ *  @license MIT
+ *  @author Valérian Saliou <valerian@valeriansaliou.name>
+ *  @url https://github.com/valeriansaliou/console.js
+ */
+
 var Console = new function () {
 
   var self = this;
