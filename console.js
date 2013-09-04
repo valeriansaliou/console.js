@@ -4,7 +4,7 @@
  *  An interface to native console methods
  *  Avoids issues when browser does not have native support for console
  *
- *  @license MIT
+ *  @license OS
  *  @author Valérian Saliou <valerian@valeriansaliou.name>
  *  @url https://github.com/valeriansaliou/console.js
  */
