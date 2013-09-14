@@ -9,14 +9,15 @@
  *  @url https://github.com/valeriansaliou/console.js
  */
 
-var Console = new function () {
+var Console = (function () {
 
-  var self = this;
+  var self = {};
 
 
   /* Variables */
+  self._development = $('html').attr('data-environment') == 'development';
   self._available = typeof(window.console) != 'undefined';
-  self._has = self._available; // You can add your environment assert there, to log only if ENV == 'development'
+  self._has = self._development && self._available;
   self._console = self._available ? console : {};
 
 
@@ -54,4 +55,8 @@ var Console = new function () {
   self.info = self._adapter(2);
   self.log = self._adapter(3);
   self.debug = self._adapter(4);
-};
+
+
+  return self;
+
+})();
