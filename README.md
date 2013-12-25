@@ -3,6 +3,8 @@ Console.js
 
 A simple Web console log interface, avoiding browser issues when not supporting the native console interface.
 
+[![build status](https://ci.frenchtouch.pro/projects/9/status.png?ref=master)](https://ci.frenchtouch.pro/projects/9?ref=master)
+
 
 ## How To Use?
 
