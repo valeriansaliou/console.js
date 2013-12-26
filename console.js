@@ -24,7 +24,7 @@ var Console = (function () {
   /* Adapters */
   self._adapter = function (level) {
     if (!self._has) {
-      return function() {}
+      return function() {};
     }
 
     var adapter = null;
@@ -42,11 +42,11 @@ var Console = (function () {
           adapter = console.debug; break;
       }
     } catch (e) {
-      adapter = function() {}
+      adapter = function() {};
     }
 
     return adapter.bind(self._console);
-  }
+  };
 
 
   /* Methods */
