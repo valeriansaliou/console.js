@@ -15,7 +15,9 @@ var Console = (function () {
 
 
   /* Variables */
-  self._development = $('html').attr('data-environment') == 'development';
+  self._html_sel = document.getElementsByTagName('html')[0];
+  self._environment = self._html_sel.getAttribute('data-environment');
+  self._development = self._environment == 'development';
   self._available = typeof(window.console) != 'undefined';
   self._has = self._development && self._available;
   self._console = self._available ? console : {};
