@@ -1,6 +1,8 @@
 Console.js
 ==========
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/valeriansaliou/console.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A simple Web console log interface, avoiding browser issues when not supporting the native console interface.
 
 [![build status](https://ci.hakuma.holdings/projects/9/status.png?ref=master)](https://ci.hakuma.holdings/projects/9?ref=master)
