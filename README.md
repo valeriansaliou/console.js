@@ -5,7 +5,7 @@ Console.js
 
 A simple Web console log interface, avoiding browser issues when not supporting the native console interface.
 
-[![build status](https://ci.hakuma.holdings/projects/9/status.png?ref=master)](https://ci.hakuma.holdings/projects/9?ref=master)
+[![Build Status](https://semaphoreci.com/api/v1/projects/e674fd77-7018-422f-aea2-760cd4d2f773/376008/shields_badge.svg)](https://semaphoreci.com/valeriansaliou/console-js)
 
 
 ## How To Use?
