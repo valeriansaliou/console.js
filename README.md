@@ -1,12 +1,9 @@
 Console.js
 ==========
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/valeriansaliou/console.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/valeriansaliou/console.js.svg?branch=master)](https://travis-ci.org/valeriansaliou/console.js) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/valeriansaliou/console.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A simple Web console log interface, avoiding browser issues when not supporting the native console interface.
-
-[![Build Status](https://travis-ci.org/valeriansaliou/console.js.svg?branch=master)](https://travis-ci.org/valeriansaliou/console.js)
-
 
 ## How To Use?
 
