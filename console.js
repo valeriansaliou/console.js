@@ -21,7 +21,7 @@ var Console = (function () {
   self._development = self._environment == 'development';
   self._available = typeof(window.console) != 'undefined';
   self._has = self._development && self._available;
-  self._console = self._available ? console : {};
+  self._log_sink = function(level, ns, value) {};
 
 
   /* Methods */
@@ -30,24 +30,32 @@ var Console = (function () {
     if (self._has) {
       console.warn(ns, value);
     }
+
+    self._log_sink('warn', ns, value);
   };
 
   self.error = function (ns, value) {
     if (self._has) {
       console.error(ns, value);
     }
+
+    self._log_sink('error', ns, value);
   };
 
   self.info = function (ns, value) {
     if (self._has) {
       console.info(ns, value);
     }
+
+    self._log_sink('info', ns, value);
   };
 
   self.log = function (ns, value) {
     if (self._has) {
       console.log(ns, value);
     }
+
+    self._log_sink('log', ns, value);
   };
 
   self.debug = function (ns, value) {
@@ -57,6 +65,21 @@ var Console = (function () {
       } else {
         console.log(ns, value);
       }
+    }
+
+    self._log_sink('debug', ns, value);
+  };
+
+
+  /* Setters */
+
+  self.set_log_sink = function(fn_log_sink_handler) {
+    if (typeof fn_log_sink_handler != "function") {
+      throw new Error(
+        "Expected log sink argument to be a function"
+      );
+    } else {
+      self._log_sink = fn_log_sink_handler;
     }
   };
 
